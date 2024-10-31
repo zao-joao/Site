@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>soma numeros</h2>
+        <p id = "resultado"></p>
+        <script>
+            var num1 =parseFloat(prompt("digite o numero 01"));
+            var num2 =parseFloat(prompt("digite o numero 02"));
+            var comfirma =comfirm("deseja realizar a soma" +num1+ 
+            "+" +num2+ ":");
+            if(comfirma){
+                var soma = num1 + num2;
+                document.getElementById("resultado").innerText =
+                "a soma é" + soma;
+            }
+                else{ document.getElementById("resultado").innerText =
+                "calculo nao realizado";
+
+
+            }
+        </script>    
+</body>
+</html>
